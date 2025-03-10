@@ -1,0 +1,176 @@
+body {
+ background-image: url('./images/pexels-tima-miroshnichenko-7991579.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-color: #080808;
+  
+}
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 600px;
+  margin-left: 450px;
+  padding: 30px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading */
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form group and input fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #4CAF50;
+}
+
+/* Buttons Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Button styles */
+.start-btn,
+.stop-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+/* Start Simulation Button */
+.start-btn {
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+}
+
+.start-btn:disabled {
+  background-color: #a5d6a7;
+}
+
+.start-btn:hover:enabled {
+  background-color: #45a049;
+}
+
+/* Stop Simulation Button */
+.stop-btn {
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+}
+
+.stop-btn:disabled {
+  background-color: #1e0f44;
+}
+
+.stop-btn:hover:enabled {
+  background-color: #e53935;
+}
+
+.notification {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* Status Section */
+.status-container {
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+
+.logs-container {
+  max-height: 250px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.log-item {
+  font-size: 14px;
+  color: #555;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.log-item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .dashboard-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
